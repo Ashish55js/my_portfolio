@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="style.js"></script>
+	
+	<style>
+	body{
+	margin:0px;
+	padding:0px;
+	font-size:30px;
+	background-image:url(./image/dark.jpg);
+	}
+	
+	.calc{
+	text-align:center;
+	border:3px solid white;
+	width:40%;
+	height:auto;
+	margin:0px auto;
+	position:absolute;
+	left:50%;
+	top:50%;
+	border-radius:10px;
+	transform:translate(-50%,-50%);
+	}
+	
+	.form-control{
+	width:100%;
+	color:black;
+	box-shadow:2px 2px 2px 0.8px red;
+	opacity:0.8;
+	}
+	.form-control input{
+		color:red;
+		}
+	
+	.l1 input{
+	margin:11px;
+	border-radius:20px;	
+	}
+	.l2 input{
+	margin:11px;
+	border-radius:20px;
+
+	}
+	.l3 input{
+	margin:11px;
+	border-radius:20px;
+	}
+	.l4 input{
+	margin:11px;
+	border-radius:20px;
+	}
+	h1{
+	text-align:center;
+	margin-top:4%;
+	color:red;
+	}
+	@media only screen and (max-width:696px){
+	.calc{
+	width:100%;
+	height:auto;
+	margin:0px auto;
+	position:absolute;
+	left:50%;
+	top:50%;
+	border-radius:10px;
+	transform:translate(-50%,-50%);
+	}
+	h1{
+		font-size:30px;
+	}
+	}
+	@media screen and (max-width:360px){
+	.calc{
+	border:3px solid green;
+	width:100%;
+	height:auto;
+	margin:0px auto;
+	position:absolute;
+	left:50%;
+	top:50%;
+	border-radius:10px;
+	transform:translate(-50%,-50%);
+	}
+	h1{
+		font-size:30px;
+	}
+	}
+	@media screen and (max-width:272px){
+	.calc{
+	border:3px solid aqua;
+	width:100%;
+	height:auto;
+	margin:0px auto;
+	position:absolute;
+	left:50%;
+	top:50%;
+	border-radius:10px;
+	transform:translate(-50%,-50%);
+	}
+	h1{
+		font-size:30px;
+	}
+	}
+	
+	</style>
+</head>
+<body>
+<h1>SIMPLE CALCULATOR<h1>
+<div class="calc">
+<form name="forms">
+<div>
+<input class="form-control" type="text" placeholder="0" name="results" >
+</div>
+
+<div class="l1">
+<input class="btn btn-primary" type="button" value=" 1 " Onclick="forms.results.value += '1' ">
+<input class="btn btn-primary" type="button" value=" 2 " Onclick="forms.results.value += '2' ">
+<input class="btn btn-primary" type="button" value=" 3 " Onclick="forms.results.value += '3' ">
+<input class="btn btn-primary" type="button" value=" + " Onclick="forms.results.value += '+' ">
+</div>
+
+<div class="l2">
+<input class="btn btn-primary" type="button" value=" 4 " Onclick="forms.results.value += '4' ">
+<input class="btn btn-primary" type="button" value=" 5 " Onclick="forms.results.value += '5' ">
+<input class="btn btn-primary" type="button" value=" 6 " Onclick="forms.results.value += '6' ">
+<input class="btn btn-primary" type="button" value=" - " Onclick="forms.results.value += '-' ">
+</div>
+
+<div class="l3">
+<input class="btn btn-primary" type="button" value=" 7 " Onclick="forms.results.value += '7' ">
+<input class="btn btn-primary" type="button" value=" 8 " Onclick="forms.results.value += '8' ">
+<input class="btn btn-primary" type="button" value=" 9 " Onclick="forms.results.value += '9' ">
+<input class="btn btn-primary" type="button" value=" * " Onclick="forms.results.value += '*' ">
+</div>
+
+<div class="l4">
+<input class="btn btn-primary" type="button" value=" / " Onclick="forms.results.value += '/' ">
+<input class="btn btn-primary" type="button" value=" 0 " Onclick="forms.results.value += '0' ">
+<input class="btn btn-primary" type="button" value=" . " Onclick="forms.results.value += '.' ">
+<input class="btn btn-primary" type="button" value=" = " Onclick="forms.results.value= eval(forms.results.value) ">
+</div>
+
+<input type="button" class="btn btn-primary btn-lg btn-block" value="CLEAR ALL" Onclick="forms.results.value = '' ">
+</form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./js/style.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Message me</title>
+    </head>
+<style>
+  .form{
+    margin:15px;
+  }
+  .form-row{
+    display:flex;
+  }
+</style>
+<body>
+  <div class="about">
+    <div class="sidenav" id="mysidenav">
+      <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closenav()"><i class="fa fa-close"></i></a>
+
+      <div class="my_logo">
+        <img class="img" src="./image/my_image.jpg">
+      </div>
+
+      <h3 style="color:red;text-align:center">&nbsp Ashish Vidyarthi</h3>
+      <div class="ankertag">
+      <a href="portfolio.html"><i class="fa fa-home"></i>&nbsp Home</a>
+      <a href="about.html"><i class="fa fa-user"></i>&nbsp&nbsp About me</a>
+      <a href="project.html"><i class='fa fa-briefcase'></i>&nbsp Projects</a>
+      <a href="contact.html"><i class="fa fa-comments"></i>&nbsp&nbsp Contact</a>
+    </div>
+    </div> 
+      
+      <div id="main">
+        <button class="openbtn" id="openbtn" onclick="opennav()">&#9776; </button>
+      </div>
+
+      <div class="mbody">
+
+        <div class="navitem">
+          <h3 style="color:white; text-align:center;width:100%;height:50px;padding:6px;background-color:crimson" >Message Me</h3>
+      </div>
+        <div class="form">
+        <form  action="#" method="POST" >
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" name="fname" placeholder="First name">
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="lname" placeholder="Last name">
+            </div>
+          </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" name="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="mobile">mobile number</label>
+              <input type="number" name="mno" class="form-control" id="mobileno">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputAddress2">Address</label>
+            <input type="text" name="add2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" name="city" class="form-control" id="inputCity">
+            </div>
+        
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select name="state" id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option value="assam">assam</option>
+                <option value="bihar">bihar</option>
+                <option value="jharkhand">jharkhand</option>
+                <option value="tamilnadu">tamilnadu</option>
+                <option value="goa">goa</option>
+                <option value="delhi">delhi</option>
+                <option value="mumbai">mumbai</option>
+                <option value="kolkata">kolkata</option>
+                <option value="panjab">panjab</option>
+                <option value="haryana">haryana</option>
+                <option value="chhatisgadh">chhatisgadh</option>
+                <option value="lakhnau">lakhnau</option>
+                <option value="karnatak">karnatak</option>
+                <option value="keral">keral</option>
+                <option value="chainai">chainai</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" name="zip" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+
+            <div style="margin:15px 0px" class="form-group">
+              <label style="margin:10px 0px" for="message">Message</label>
+              <textarea placeholder="Type Your Message Here" name="Message" class="form-control" id="message">
+              </textarea>
+            </div>
+          </div>
+          <button style="width:100%;" type="submit" name="submit" class="btn btn-primary">SUBMIT</button>
+          
+        </form>
+      </div>
+      
+          <footer class="footer">
+            <div id="foot">
+            <div class="txt">
+            <p>CONTACT US</p>
+            <p> My Email_id - ashishkumar55jaiswal@gmail.com</p>
+            <p> My Mobile_no - 6206380526</p>
+            </div>
+            <div class="cicon">
+                <a href="https://www.youtube.com/"><img src="./image/yt.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/insta.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/wp.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/fb.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/ln.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/tw.jpg" class="rounded-circle" width="50px"></a>
+            </div>
+              <div>
+                <span  >designed by AV</span>
+              </div>
+              </div>
+            
+            </footer>
+
+          </div>
+          
+        </div>
+
+        <script>
+          function closenav(){
+            document.getElementById("mysidenav").style.width="0px";
+            document.getElementById("closebtn").style.display="none";
+            document.getElementById("openbtn").style.display="block";
+          }
+          function opennav(){
+            document.getElementById("mysidenav").style.width="250px";
+            document.getElementById("closebtn").style.display="block";
+            document.getElementById("closebtn").style.visibility="visible";
+            document.getElementById("openbtn").style.display="none";
+            document.getElementById("mysidenav").style.position="fixed";
+            document.getElementById("mysidenav").style.visibility="visible";
+
+          }
+          </script>
+</body>
+</html>

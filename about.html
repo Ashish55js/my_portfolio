@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./js/style.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>About me</title>
+    </head>
+    <style>
+      body{
+        overflow-x:hidden:
+      }
+      /*--navbar--*/
+.navitem{
+  float:right;
+  width:100%;
+  display: block;
+  position:sticky;
+  border-bottom: 1.5px solid lightblue;
+  box-shadow: 2px solid salmon ;
+
+  }
+  .navitem a{
+      position:relative;
+      display:inline;
+      font-family: Arial, Helvetica, sans-serif;
+      float:right;
+      font-weight: bold;
+   list-style:none;  
+   padding:10px;
+   margin:2px;
+   font-size:20px; 
+   text-decoration:none; 
+   color:black;  
+  }
+  .navitem a:hover{
+    color: white;
+   background-color:black;
+   border-radius: 15px;
+  }
+  
+
+  /* about section css  */
+  .about{
+    display: flex;
+  }
+  .contact{
+    margin:15px;
+    padding:15px;
+    display: block;
+  }
+  .contact h5{
+    color:crimson;
+  }
+  .contact h4{
+    color:blue;
+  }
+  .mbody{
+    width:100%;
+    display:block;
+    margin-left:285px;
+  }
+  .mbody h4{
+color:blue;
+  }
+  .mbody h5{
+  color:crimson;
+  }
+  .skill{
+    margin:15px;
+    padding:15px;
+  }
+  .skillitem{
+    width:90%;
+    height:6px;
+    color:white;
+    border-radius:5px;
+    border:2px solid seagreen;
+  }
+  .html{
+    width:90%;
+    height:100%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .css{
+    width:85%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .js{
+    width:50%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .php{
+    width:60%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .c{
+    width:70%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .cpp{
+    width:65%;
+    height:100%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .java{
+    width:60%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .mysql{
+    width:60%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .python{
+    width:40%;
+    border:2px solid seagreen;
+    background-color:seagreen;
+  }
+  .education{
+    margin:30px;
+  }
+
+  .certificates{
+    width:100%;
+    margin:15px;
+  }
+  .card{
+    padding:15px;
+    margin:6px;
+    border:ridge;
+    width:32%;
+  }
+  .row1{
+    display:flex;
+  }
+  .row2{
+    display:flex;
+  }
+  .hobbies{
+    margin:20px;
+  }
+  @media screen and (max-width: 500px) {
+    .sidenav {
+      visibility: hidden;
+    }
+    .mbody{
+      margin-left: 0px;
+    }
+    .navitem{
+      text-align:center;
+  }
+  .openbtn{
+    z-index:1;
+  }
+  .navitem a{
+      display:block;
+      float:none;
+      font-size:20px;
+      width: 100%;
+    margin-left: auto;
+  }
+  .navitem h3{
+    color:white; 
+    align-items:center;
+    padding:6px;
+    background-color:crimson;
+    height:51px;
+  }
+    .row1{
+      position: relative;
+      display:block;
+    }
+    .row2{
+    float-direction:column ;
+    display:block;
+
+    }
+    .card{
+      display: block;
+      width:auto;
+    }
+    .footer{
+        margin:4px;
+    }
+  }
+</style>
+
+<body>
+  <div class="about">
+    <div class="sidenav" id="mysidenav">
+      <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closenav()"><i class="fa fa-close"></i></a>
+
+      <div class="my_logo">
+        <img class="img" src="./image/my_image.jpg">
+      </div>
+
+      <h3 style="color:red;text-align:center">&nbsp Ashish Vidyarthi</h3>
+      <div class="ankertag">
+      <a href="portfolio.html"><i class="fa fa-home"></i>&nbsp Home</a>
+      <a href="about.html"><i class="fa fa-user"></i>&nbsp&nbsp About me</a>
+      <a href="project.html"><i class='fa fa-briefcase'></i>&nbsp Projects</a>
+      <a href="contact.html"><i class="fa fa-comments"></i>&nbsp&nbsp Contact</a>
+    </div>
+    </div>  
+      
+      <div id="main">
+        <button class="openbtn" id="openbtn" onclick="opennav()">&#9776; </button>
+      </div>
+      <div class="mbody">
+
+        <div class="navitem">
+          <h3 style="color:white; align-items:center;padding:6px" ></h3>
+      </div>
+
+        <div class="navitem">
+          <a href="#hobbies">Hobbies</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#education">Education</a>
+          <a href="#skill">Skills</a>
+          <a href="#contact">Contact</a>
+            </div> 
+            <h3 style="text-align:center;color:red;margin-top:60px">About me</h3>
+
+            <div class="contact" id="contact">
+              <h4>Contact</h4>
+              <h5>Address</h5>
+              <label>Vill : Ghorasahan , Dis : East champaran (Bihar)
+              </br>
+              Pin_code : 845303
+              </label>
+              </br>
+              <h5>Email</h5>
+              <label>ashishkumar55jaiswal@gmail.com</label>
+              </br>
+              <h5>Phone</h5>
+              <label>+91 6206380526</label>
+              </br>       
+            </div>
+
+            <div class="skill" id="skill">
+              <h4>Skills</h4>
+              <h5>HTML</h5>
+              <div class="skillitem"><div class="html"> </div></div>
+              <h5>CSS</h5>
+              <div class="skillitem"><div class="css"> </div></div>
+              <h5>JS</h5>
+              <div class="skillitem"><div class="js"> </div></div>
+              <h5>PHP</h5>
+              <div class="skillitem"><div class="php"> </div></div>
+              <h5>C</h5>
+              <div class="skillitem"><div class="c"> </div></div>
+              <h5>C++</h5>
+              <div class="skillitem"><div class="cpp"> </div></div>
+              <h5>JAVA</h5>
+              <div class="skillitem"><div class="java"> </div></div>
+              <h5>MY SQL</h5>
+              <div class="skillitem"><div class="mysql"> </div></div>
+              <h5>PYTHON</h5>
+              <div class="skillitem"><div class="python"> </div></div>
+
+            </div>
+
+            <div class="education" id="education">
+              <h4 style="color:blue">Education</h4>
+              <div class="engg">
+              2021-2024
+              <h5>Bachalor Of Engineering</h5>
+              College : Chandigardh University (Computer Science)</br>
+              Percentage : Persuing
+              </div></br>
+
+              2018-2021 
+              <div class="diploma">       
+                <h5>Diploma</h5>
+                College : G.P Patna-7 (Computer Science)</br>
+                CGPA : 8.8
+              </div></br>
+ 
+              <div class="matric"> 
+                2017-2018      
+                <h5>Matriculation</h5>
+                School : T.R.M.P HIGH SCHOOL </br>
+                Percentage : 82.6%
+              </div>
+
+             </div>
+
+             <h4 id="certificates" style="color:blue;margin-left:28px">Certificates</h4>
+
+             <div class="certificates">
+
+              <div class="row1">
+               <div class="card">
+                <img src="./image/full_stack.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Description</h5>
+                  <p class="card-text">This is the certificate of full stack development conducted by Itronix solutions.</p>
+                  <a href="./image/full_stack.jpg" class="btn btn-primary">Preview</a>
+                </div>
+              </div>
+
+                <div class="card">
+                <img src="./image/web_development.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Description</h5>
+                  <p class="card-text">This is the certificate of web development organized by Eudonix.</p>
+                  <a href="./image/web_development.jpg" class="btn btn-primary">Preview</a>
+                </div>
+               </div>
+
+               <div class="card">
+                <img src="./image/python_essential.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Description</h5>
+                  <p class="card-text">This is the certificate of Python essential organized by Cisco Network Academy.</p>
+                  <a href="./image/python_essential.jpg" class="btn btn-primary">Preview</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row2">
+              <div class="card">
+                <img src="./image/pm_yuwa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Description</h5>
+                  <p class="card-text">This is the certificate of Entrepreneurship Development program organized by PM-YUWA Yojna.</p>
+                  <a href="./image/pm_yuwa.jpg" class="btn btn-primary">Preview</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./image/azadi_ke_amrit_mahotsav.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Description</h5>
+                  <p class="card-text">This is the certificate of Nation wide financial markets quiz organized by azadi ke amrit mahitsav.</p>
+                  <a href="./image/azadi_ke_amrit_mahotsav.jpg" class="btn btn-primary">Preview</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./image/mahindra_certificate.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Description</h5>
+                  <p class="card-text">This is the certificate of Employability Skill Training  conducted by Maindra Pride Classroom.</p>
+                  <a href="./image/mahindra_certificate.jpg" class="btn btn-primary">Preview</a>
+                </div>
+              </div>
+
+            </div>
+             </div>
+
+          <div class="hobbies" id="hobbies">
+            <h4>Hobbies</h4></br>
+            <h5>Playing Cricket</h5>
+            <h5>Coding</h5>
+            <h5>Listening and Singing songs</h5>
+            <h5>DSA</h5>
+          </div>
+
+          <footer class="footer">
+            <div id="foot">
+            <div class="txt">
+            <p>CONTACT US</p>
+            <p> My Email_id - ashishkumar55jaiswal@gmail.com</p>
+            <p> My Mobile_no - 6206380526</p>
+            </div>
+            <div class="cicon">
+                <a href="https://www.youtube.com/"><img src="./image/yt.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/insta.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/wp.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/fb.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/ln.jpg" class="rounded-circle" width="50px"></a>
+                <a href="youtube.com"><img src="./image/tw.jpg" class="rounded-circle" width="50px"></a>
+            </div>
+              <div>
+                <span  >designed by AV</span>
+              </div>
+              </div>
+            
+            </footer>
+
+          </div>
+          
+        </div>
+
+        <script>
+          function closenav(){
+            document.getElementById("mysidenav").style.width="0px";
+            document.getElementById("closebtn").style.display="none";
+            document.getElementById("openbtn").style.display="block";
+          }
+          function opennav(){
+            document.getElementById("mysidenav").style.width="250px";
+            document.getElementById("closebtn").style.display="block";
+            document.getElementById("closebtn").style.visibility="visible";
+            document.getElementById("openbtn").style.display="none";
+            document.getElementById("mysidenav").style.position="fixed";
+            document.getElementById("mysidenav").style.visibility="visible";
+
+          }
+          </script>
+</body>
+</html>
